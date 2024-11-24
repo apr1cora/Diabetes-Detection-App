@@ -1,0 +1,55 @@
+/* Center the container */
+.container {
+    max-width: 5000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffcdb2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the input field */
+input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style the button */
+button {
+    background-color: #6d6875; /* Button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #b5838d; /* Hover color */
+}
+
+/* Add some spacing for better UX */
+input, button {
+    margin-top: 15px;
+}
