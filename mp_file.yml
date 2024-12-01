@@ -1,0 +1,33 @@
+diabetes_detection_program:
+  libraries:
+    - pandas
+    - numpy
+    - sklearn.model_selection
+    - sklearn.preprocessing
+    - sklearn.metrics
+    - sklearn.ensemble
+    - sklearn.linear_model
+    - sklearn.svm
+    - sklearn.neural_network
+    - sklearn.neighbors
+  data:
+    source: "diabetes.csv"
+    preprocess:
+      null_values_replacement:
+        Glucose: median
+        BloodPressure: median
+        SkinThickness: median
+        Insulin: median
+        BMI: median
+      new_features:
+        - NewBMI:
+            categories:
+              - Underweight
+              - Normal
+              - Overweight
+              - Obesity-I
+              - Obesity-II
+              - Obesity-III
+            thresholds:
+              - "< 18.5"
+             
